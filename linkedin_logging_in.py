@@ -7,15 +7,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 options = Options()
 options.add_argument("user-data-dir=C:\\Users\\User\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3")
 
-# username = "sashopigas@gmail.com"
-# password = "Sasho1234"
+# username = ""
+# password = ""
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 
 import time
 
-username = "sashopigas@gmail.com"
-password = "Sasho1234"
 
 driver.get("https://www.linkedin.com/")
 time.sleep(300)
